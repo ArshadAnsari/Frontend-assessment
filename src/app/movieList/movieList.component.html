@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let _elem of movieData" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="movieBanner" (click)="onMovieSelect(_elem.slug, _elem._id)">
+                <img src="https://image.tmdb.org/t/p/w500{{_elem.posterURL}}" />
+                <div class="movieTitle text-center">{{_elem.title}}</div>
+                <div class="movieDate text-center">{{_elem.releaseDate | date: 'mediumDate'}}</div>
+            </div>
+        </div>
+    </div>
+</div>

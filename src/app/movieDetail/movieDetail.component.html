@@ -1,0 +1,19 @@
+<div class="container" *ngIf="movieDetail._id !== undefined">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img class="backdropImage" src="https://image.tmdb.org/t/p/w500{{movieDetail.backdropURL}}" />
+        </div>
+    </div>
+    <div class="row posterContainer">
+        <img class="posterImage" src="https://image.tmdb.org/t/p/w500{{movieDetail.posterURL}}" />
+        <div class="posterTitle">
+            <div class="movieTitle">{{movieDetail.title}}</div>
+            <div class="movieDate">{{movieDetail.releaseDate | date: 'mediumDate'}}</div>
+            <a href="" class="deleteButton" (click)="onDeleteMovie()">Delete Movie</a>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 plotContainer">
+            {{movieDetail.plot}}
+        </div>
+    </div>
+</div>

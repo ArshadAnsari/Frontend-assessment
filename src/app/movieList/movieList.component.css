@@ -1,0 +1,20 @@
+.movieBanner {
+    margin: 15px;
+    height: auto;
+}
+
+.movieBanner img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.movieTitle {
+    margin-top: 7px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.movieDate {
+    font-style: italic;
+    font-size: 12px;
+}
