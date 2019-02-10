@@ -29,3 +29,8 @@
     font-style: italic;
     font-size: 12px;
 }
+
+.movieTitle span,
+.movieDate span {
+    cursor: pointer;
+}
