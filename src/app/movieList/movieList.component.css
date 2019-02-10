@@ -1,3 +1,14 @@
+.loader {
+    background-image: url("../../assets/loader.gif");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
 .movieBanner {
     margin: 15px;
     height: auto;

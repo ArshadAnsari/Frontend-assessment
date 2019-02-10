@@ -1,4 +1,10 @@
 <div class="container">
+    <div class="loader" *ngIf="movieData.length == 0"></div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <h2>Movie List</h2>
+        </div>
+    </div>
     <div class="row">
         <div *ngFor="let _elem of movieData" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="movieBanner" (click)="onMovieSelect(_elem.slug, _elem._id)">
